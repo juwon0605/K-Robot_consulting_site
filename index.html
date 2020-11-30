@@ -1,3 +1,12 @@
+<!-- 
+	1. 케이로봇 자체 프로젝트 예시 이미지 외주
+	2. 로드맵 페이지 만들기
+	3. 전체 검토
+	4. 백엔드 동영상 플랫폼 아키텍쳐 자료조사
+	5. 로그인 버튼에 수료증, 자격증
+	6. 자체 PBL 상세 페이지
+ -->
+
 <!DOCTYPE HTML>
 <!--
 	Industrious by TEMPLATED
@@ -13,14 +22,31 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			.projects {
+			.hw-project-effect, .sw-project-effect {
 				color: black;
+			}
+			.hw-project-effect:hover {
+				cursor: pointer;
+				transform: scale(1.1);
+				color: var(--hw-project-color);
+			}
+			.sw-project-effect:hover {
+				cursor: pointer;
+				transform: scale(1.1);
+				color: var(--sw-project-color);
+			}
+			.projects {
+				color: inherit;
 				font-weight: bold;
 				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 			}
 			.vision {
 				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 			}
+			#main-image {
+				width: 100%;
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -37,8 +63,8 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
+					<li><a href="im-robot.html">Login</a></li>
+					<li><a href="roadmap.html">Learning Roadmap</a></li>
 				</ul>
 			</nav>
 
@@ -49,7 +75,8 @@
 					<p>진짜 IT 공부는 직접 만들어보는거야!<br />
 					실제 구현되어 있는 프로젝트를 한땀 한땀 따라 만들면서 배워보세요.
 				</div>
-				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+				<!-- <video autoplay loop muted playsinline src="images/banner.mp4"></video> -->
+				<!-- <img id="main-image" src="images/아임월드.png" /> -->
 			</section>
 
 		<!-- Highlights -->
@@ -63,58 +90,76 @@
 					</header>
 					<div class="highlights">
 						<section>
-							<div class="content">
-								<header>
-									<!-- <a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a> -->
-									<h1 class="projects">Robot</h1>
-								</header>
-								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
-							</div>
-						</section>
-						<section>
-							<div class="content">
+							<a href="robot.html" style="text-decoration: none;">
+							<div class="content hw-project-effect">
 								<header>
 									<!-- <a href="#" class="icon fa-files-o"><span class="label">Icon</span></a> -->
-									<h1 class="projects">IOT</h1>
+									<!-- <h1 class="projects">Robot</h1> -->
+									<img style="width: 100%;" src=images/아임로봇.png />
 								</header>
 								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
 							</div>
+							</a>
 						</section>
 						<section>
-							<div class="content">
+							<a href="iot.html" style="text-decoration: none;">
+							<div class="content hw-project-effect">
+								<header>
+									<!-- <a href="#" class="icon fa-files-o"><span class="label">Icon</span></a> -->
+									<!-- <h1 class="projects">IOT</h1> -->
+									<img style="width: 100%;" src=images/아임드론.png />
+								</header>
+								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
+							</div>
+							</a>
+						</section>
+						<section>
+							<a href="3d-print.html" style="text-decoration: none;">
+							<div class="content hw-project-effect">
 								<header>
 									<!-- <a href="#" class="icon fa-floppy-o"><span class="label">Icon</span></a> -->
-									<h1 class="projects">3D Print</h1>
+									<!-- <h1 class="projects">3D Print</h1> -->
+									<img style="width: 120%;" src=images/아임프린팅.png />
 								</header>
 								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
 							</div>
+							</a>
 						</section>
 						<section>
-							<div class="content">
+							<a href="ai.html" style="text-decoration: none;">
+							<div class="content sw-project-effect">
 								<header>
 									<!-- <a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a> -->
-									<h1 class="projects">AI</h1>
+									<!-- <h1 class="projects">AI</h1> -->
+									<img style="width: 80%;" src=images/아임에이아이.png />
 								</header>
 								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
 							</div>
+							</a>
 						</section>
 						<section>
-							<div class="content">
+							<a href="big-data.html" style="text-decoration: none;">
+							<div class="content sw-project-effect">
 								<header>
 									<!-- <a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a> -->
-									<h1 class="projects">Big Data</h1>
+									<!-- <h1 class="projects">Big Data</h1> -->
+									<img style="width: 100%;" src=images/아임코딩.png />
 								</header>
 								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
 							</div>
+							</a>
 						</section>
 						<section>
-							<div class="content">
+							<a href="ar-vr.html" style="text-decoration: none;">
+							<div class="content sw-project-effect">
 								<header>
 									<!-- <a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a> -->
-									<h1 class="projects">AR, VR</h1>
+									<!-- <h1 class="projects">AR, VR</h1> -->
+									<img style="width: 100%;" src=images/아임브이알에이알.png />
 								</header>
 								<!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
 							</div>
+							</a>
 						</section>
 					</div>
 				</div>
@@ -124,7 +169,7 @@
 			<section id="cta" class="wrapper">
 				<div class="inner">
 					<h2 class="vision">4차 산업혁명 미래교육</h2>
-					<p class="vision">우리 아이들이 살아갈 4차 산업혁명 시대에는 디지털 시대에 필요한 창의적 사고, 컴퓨팅적 사고 CT(Computational Thinking)를 길러주는 교육이 필수입니다. <br>
+					<p class="vision">우리 아이들이 살아갈 4차 산업혁명 시대에는 디지털 시대에 필요한 창의적 사고, 논리적 사고, 문제해결적 사고를 길러주는 교육이 필수입니다. <br>
 						프로그래머로 키우기 위한 프로그래밍이 아닌 미래 세상을 살아가기 위한 기본 능력으로 알고리즘 원리를 놀이와 게임으로 자연스럽게 재밌게 학습할 수 있습니다. <br>
 						 지금이라도 주입식 암기 교육을 탈피하고 창의성을 길러주는 새로운 교육 패러다임을 수용해야 해야 합니다.</p>
 				</div>
@@ -145,7 +190,7 @@
 						<section>
 							<div class="content">
 								<blockquote>
-									<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+									<p>대표님 하시고 싶으신 말 추가. 대표님 하시고 싶으신 말 추가. 대표님 하시고 싶으신 말 추가.</p>
 								</blockquote>
 								<div class="author">
 									<div class="image">
@@ -158,7 +203,7 @@
 						<section>
 							<div class="content">
 								<blockquote>
-									<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+									<p>회사 임원님 하시고 싶으신 말 추가. 회사 임원님 하시고 싶으신 말 추가. 회사 임원님 하시고 싶으신 말 추가.</p>
 								</blockquote>
 								<div class="author">
 									<div class="image">
@@ -171,7 +216,7 @@
 						<section>
 							<div class="content">
 								<blockquote>
-									<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+									<p>회사 임원님 하시고 싶으신 말 추가. 회사 임원님 하시고 싶으신 말 추가. 회사 임원님 하시고 싶으신 말 추가.</p>
 								</blockquote>
 								<div class="author">
 									<div class="image">
